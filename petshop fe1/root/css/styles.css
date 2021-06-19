@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #3C2313;
+}
+.header-negro {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.header-naranja {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
+.seccion-img {
+    background-image: url('./img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 11cm;
+    padding-left: 10cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-right: 0cm;
+}
+.titulo-ppal {
+    background-color: #FFFFFF;
+}
+.boton-comederos {
+    background-color: #F0A83E;
+    color:#FFFFFF
+}
+.fas fa-paw {
+    background-color: #F0A83E;
+    font-size: 40px;
+}
+h1 {
+    font-weight: 700;
+}
+.texto-bold {
+    font-weight: 700;
+}
+.centrar {
+    text-align: center;
+}
+.fondo-marron {
+    background-color: #3C2313;
+    padding-top: 10px;
+    padding-left: 1cm;
+}
+h4 {
+    color: #FFFFFF;
+}
+.fondo-naranja {
+    background-color: #F0A83E;
+}
+#textos-grisoscuro {
+    color: #666666;
+}
+.textos-gris {
+    color: #8A8787;
+}
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+.icon {
+    color: #8A8787;
+    font-size: 40px;
+}
+.boton-marron {
+    background-color: #3C2313;
+    color: #FFFFFF;
+}
+.boton-reset {
+    background-color: #8A8787;
+    color: #FFFFFF;
+}
+.boton-send {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
+.icon-blanco {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+#suscripcion {
+    background-color: #3C2313;
+    color: #FFFFFF;
+}
+.precio {
+    color: #F0A83E;
+}
