@@ -11,84 +11,94 @@
     <title>FrontCat&Dog</title>
 </head>
 <body>
-    <header class="header-negro">
-        <section>
+    <header>
+        <section class="header-negro">
         <p>Grandes ofertas en comederos</p>
-        <button type="menu">Español</button>
-        <button type="menu">ARG $</button>
+        <nav>
+            <button type="menu" class="nav">Español</button>
+            <button type="menu" class="nav">ARG $</button>
+        </nav>
         </section>
         <section class="header-naranja">
-        <img src="./img/logo.png" alt="Logo FrontCat&Dog">
-        <p>Menú principal</p>
-            <nav>
-                <i class="fas fa-paw"></i><a href="#categorias">Categorías</a>
-                <i class="fas fa-paw"></i><a href="#pets">Pets</a>
-                <i class="fas fa-paw"></i><a href="#nosotros">Nosotros</a>
-                <i class="fas fa-paw"></i><a href="#contactanos">Contactanos</a>
+        <img src="./img/logo.png" alt="Logo FrontCat&Dog" id="logo-arriba">
+            <nav id="nav">
+                <i class="fas fa-paw"></i><a href="#categorias"> Categorías</a>
+                <i class="fas fa-paw"></i><a href="#pets"> Pets</a>
+                <i class="fas fa-paw"></i><a href="#nosotros"> Nosotros</a>
+                <i class="fas fa-paw"></i><a href="#contactanos"> Contactanos</a>
             </nav>
+        <div id="hamburguer">
+            <i class="fas fa-bars"></i>
+        </div>
         </section>
     </header>
     <main>
     <section class="seccion-img">
+    <div id="textos">
         <h2 id="titulo-ppal">¡Es un placer tenerte aquí!</h2>
         <h3>¡Comederos en descuento!</h3>
         <button type="button" class="boton-comederos">COMEDEROS</button>
+    </div>
     </section>
     <section class="centrar">
         <img src="./img/patita.png" alt="Patita naranja">
         <h1>Productos Destacados</h1>
         <p id="textos-grisoscuro">Comederos-Accesorios-Comida</p>
-        <img src="./img/img1.png" alt="Producto 1">
-        <p>Juguete Churrasquito</p>
-        <p class="precio">$150</p>
-        <img src="./img/img2.png" alt="Producto 2">
-        <p>Comedero para perro</p>
-        <p class="precio">$250</p>
-        <img src="./img/img3.png" alt="Producto 3">
-        <p>Juguete Huesito</p>
-        <p class="precio">$650</p>
+        <section id="shop">
+            <div>
+                <img src="./img/img1.png" alt="Producto 1">
+                <p>Juguete Churrasquito</p>
+                <p class="precio">$150</p>
+            </div>
+            <div>
+                <img src="./img/img2.png" alt="Producto 2">
+                <p>Comedero para perro</p>
+                <p class="precio">$250</p>
+            </div>
+            <div>
+                <img src="./img/img3.png" alt="Producto 3">
+                <p>Juguete Huesito</p>
+                <p class="precio">$650</p>
+            </div>
+        </section>
     </section>
     <section class="centrar">
         <h2 class="texto-bold">Contáctanos</h2>
-        <button type="button" class="boton-marron">Nombre y apellido</button>
-        <br>
-        <br>
-        <button type="button" class="boton-marron">Ingresá tu correo electrónico</button>
-        <br>
-        <br>
-        <button type="button" class="boton-marron">Teléfono</button>
-        <br>
-        <br>
-        <button type="button" class="boton-reset">Resetear</button>
-        <button type="submit" class="boton-send">Enviar</button>
+        <form>
+            <input type="text" class="form" value="Nombre y apellido"><br>
+            <input type="text" class="form" value="Ingresá tu correo electrónico"><br>
+            <input type="text" class="form" value="Teléfono"><br>
+            <input type="reset" id="reset" value="Resetear">
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
     </section>
     <section class="fondo-naranja">
-        <hr>
+        <div id="alinear">
         <i class="fas fa-envelope-open-text icon-blanco"></i>
         <h4>Suscríbete para más novedades</h4>
-        <label for="email">Ingresá tu correo electrónico</label>
-        <input type="email" id="email" pattern=".+@gmail\.com" size="30" required>
+        </div>
+        <div>
+        <input type="email" id="email" pattern=".+@gmail\.com" size="30" required value="Ingresá tu correo electrónico">
         <button type="submit" id="suscripcion">Suscribime</button>
-        <hr>
+        </div>
     </section>
     <section class="fondo-marron">
-        <i class="fas fa-map-marker-alt icon"></i>
-        <h4>Localidad</h4>
-        <p class="textos-gris">Calle - Provincia</p>
-        <i class="fas fa-phone-alt icon"></i>
-        <h4>Teléfono</h4>
-        <p class="textos-gris">Número de teléfono</p>
-        <i class="fas fa-envelope icon"></i>
-        <h4>Correo electrónico</h4>
-        <p class="textos-gris">Dirección de correo</p>
-        <img src="./img/logo.png">
+        <div>
+            <i class="fas fa-map-marker-alt icon"></i>
+            <h4>Localidad</h4>
+            <p class="textos-gris">Calle - Provincia</p>
+            <i class="fas fa-phone-alt icon"></i>
+            <h4>Teléfono</h4>
+            <p class="textos-gris">Número de teléfono</p>
+            <i class="fas fa-envelope icon"></i>
+            <h4>Correo electrónico</h4>
+            <p class="textos-gris">Dirección de correo</p>
+        </div>
+        <img src="./img/Logo-marron.png">
     </section>
     <footer>
         <p style="text-align: center;">Todos los derechos reservados Front End</p>
     </footer>
     </main>
-
-
-    
 </body>
 </html>

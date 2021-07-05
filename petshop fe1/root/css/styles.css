@@ -1,33 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+/* body */
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #3C2313;
 }
+/* header */
 .header-negro {
     background-color: #000000;
     color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 .header-naranja {
     background-color: #F0A83E;
     color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 10px 50px;
 }
+.header-naranja a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#hamburguer {
+    display: none;
+}
+/* sección principal */
 .seccion-img {
-    background-image: url('./img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
     padding-bottom: 11cm;
     padding-left: 10cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
     margin-right: 0cm;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.seccion-img h2, h3{
+    text-align: center;
+    position: relative;
+    top: 250px; right: 100px;
 }
 .titulo-ppal {
     background-color: #FFFFFF;
+    padding: 10px;
 }
 .boton-comederos {
     background-color: #F0A83E;
-    color:#FFFFFF
+    color:#FFFFFF;
+    font-size: 16px;
+    position: relative;
+    top: 260px; right: 20px;
+    padding: 7px;
+    border-radius: 5px;
 }
+/* Sección shop */
 .fas fa-paw {
     background-color: #F0A83E;
     font-size: 40px;
@@ -35,57 +78,207 @@ body {
 h1 {
     font-weight: 700;
 }
-.texto-bold {
-    font-weight: 700;
+#shop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0px;
 }
+.precio {
+    color: #F0A83E;
+}
+/* sección encuestas */
 .centrar {
     text-align: center;
 }
-.fondo-marron {
-    background-color: #3C2313;
-    padding-top: 10px;
-    padding-left: 1cm;
+.texto-bold {
+    font-weight: 700;
+    margin-bottom: 10px;
 }
-h4 {
-    color: #FFFFFF;
-}
-.fondo-naranja {
-    background-color: #F0A83E;
-}
-#textos-grisoscuro {
-    color: #666666;
-}
-.textos-gris {
-    color: #8A8787;
-}
-footer {
-    background-color: #222222;
-    color: #FFFFFF;
-}
-.icon {
-    color: #8A8787;
-    font-size: 40px;
-}
-.boton-marron {
+.form{
+    width: 340px;
+    height: 40px;
     background-color: #3C2313;
     color: #FFFFFF;
+    border-radius: 15px;
+    margin: 5px 0px;
+    padding-left: 10px;
+    font-size: 9px;
 }
-.boton-reset {
+#reset {
+    width: 110px;
+    height: 34px;
     background-color: #8A8787;
     color: #FFFFFF;
+    border-radius: 15px;
+    margin: 20px 5px;
+
 }
-.boton-send {
+#enviar {
+    width: 110px;
+    height: 34px;
     background-color: #F0A83E;
     color: #FFFFFF;
+    border-radius: 15px;
+    margin: 30px 5px 50px 5px;
+}
+/* parte naranja */
+.fondo-naranja {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 20px;
+    margin: 0px;
+}
+#alinear {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#alinear h4 {
+    padding-left: 10px;
+    font-size: 20px;
 }
 .icon-blanco {
     color: #FFFFFF;
     font-size: 30px;
 }
+#email {
+    background-color: #FFFFFF;
+    color: #A0A0A0;
+    width: 271px;
+    height: 40px;
+    font-size: 9px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
 #suscripcion {
     background-color: #3C2313;
     color: #FFFFFF;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px;
 }
-.precio {
-    color: #F0A83E;
+.boton-marron {
+    background-color: #3C2313;
+    color: #FFFFFF;
 }
+/* parte marrón */
+.fondo-marron {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+h4 {
+    color: #FFFFFF;
+}
+.textos-gris {
+    color: #8A8787;
+}
+.icon {
+    color: #8A8787;
+    font-size: 40px;
+}
+/* footer */
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    height: 24px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+}
+    /* header */
+    .header-negro {
+        display: none;
+    }
+    .header-naranja {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+    }
+    #logo-arriba {
+        width: 40vw;
+        height: auto;
+    }
+    #nav{
+        display: none;
+    }
+    #hamburguer {
+        display: inline;
+        font-size: 20px;
+    }
+    /* sección principal */
+    .seccion-img {
+        background-image: url('../img/Full\ 1.png');
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-img h2, h3 {
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+        color: #FFFFFF;
+    }
+    #textos {
+        width: 90vw;
+        height: auto;
+    }
+    .boton-comederos {
+        position: relative;
+        top: 300px; right: 190px;
+    }
+    /* sección shop */
+    #shop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* sección contáctanos */
+    #reset {
+        width: 199px;
+        height: 45px;
+        border-radius: 25px;
+    }
+    #enviar {
+        width: 199px;
+        height: 45px;
+        border-radius: 25px;
+    }
+    /* sección suscripción */
+    .fondo-naranja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #alinear {
+        padding: 10px 10px;
+    }
+    /* sección marrón */
+    .fondo-marron {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
