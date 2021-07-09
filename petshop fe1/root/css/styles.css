@@ -164,6 +164,14 @@ h1 {
     background-color: #3C2313;
     color: #FFFFFF;
 }
+.nav-opciones::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1b0";
+    color: #F0A83E;
+    border: white;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
 /* parte marrón */
 .fondo-marron {
     background-color: #3C2313;
